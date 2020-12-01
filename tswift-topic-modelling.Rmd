@@ -1,6 +1,11 @@
 ---
 title: "Teardrops on my Data Frames: Topic Modeling of Taylor Swift Songs"
 date: '2018-07-25'
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 ---
 
 ```{r import, echo = FALSE, include = FALSE}
